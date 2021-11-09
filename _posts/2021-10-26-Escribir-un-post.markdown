@@ -32,3 +32,4 @@ Lo más complicado es integrar los estilos y filtros dentro de todo este sistema
 <div class="bloque">
 La generación de un cuadro como éste requiere crear un código de estilo, que guardamos en un archivo dentro de la carpeta _sass y escribir una llamada a ese archivo dentro de otro que se carga automáticamente en la cabecera de la página web.
 </div>
+Esto sería todo por hoy.
