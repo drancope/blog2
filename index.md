@@ -4,7 +4,7 @@
 
 layout: default
 ---
-Menu: <a href="http://drancope-clases.github.io/about.md">About</a> ... <a href="index.md">Home</a>
+Menu: <a href="about/index.html">About</a> - <a href="index.md">Home</a>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
