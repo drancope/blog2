@@ -1,4 +1,0 @@
----
-Cabeceras
----
-No es difícil
