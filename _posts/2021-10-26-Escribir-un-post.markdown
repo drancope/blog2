@@ -2,7 +2,7 @@
 layout: post
 title:  "Escribir un post"
 date:   2021-10-26 12:31:58 +0200
-categories: Novedades
+categories: Markdown 3ESO
 author: drancope
 ---
 En este artículo intentaré dar indicaciones para hacer cada uno de los artículos de un blog Jekyll.
