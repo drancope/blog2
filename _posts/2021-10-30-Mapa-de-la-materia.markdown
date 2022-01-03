@@ -19,17 +19,6 @@ html, para mover allí los documentos creados con un editor de texto, o con un p
 oficina que exporta al formato adecuado.
 </div>
 
-<table style="span: 10;">
-  <tr>
-    <td>
-       <b>hola</b> hola
-    </td>
-    <td>
-       <b>hola</b> hola
-    </td>
-    <td></td></tr>
-</table>
-
 ## Programar
 
 Aprender programación empieza por aprender la sintáxis de un lenguaje concreto. Con esto, comenzaremos a practicar los bucles más sencillos, como las repeticiones una cierta cantidad de veces, o el bucle mientras o hasta que se cumpla una condición.

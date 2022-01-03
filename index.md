@@ -4,7 +4,7 @@
 
 layout: default
 ---
-Menu: <a href="about/index.html">About</a> - <a href="index.md">Home</a>
+<a href="index.html">Home</a> - <a href="about/index.html">About</a>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
