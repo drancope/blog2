@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:50:19+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:53:42+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
@@ -7,7 +7,7 @@
  
  
 &lt;/div&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;cómo-abordar-este-proyecto&quot;&gt;Cómo abordar este proyecto&lt;/h2&gt;
 
 &lt;p&gt;Podemos pensar en un dispositivo que de manera independiente es capaz de tomar datos del ambiente exterior y mostrarlos en una pantalla, o bien que sea capaz de conectarse a Internet y guardar datos en algún servicio de alojamiento de datos. También podríamos diseñarlo para que fuera interactivo con los usuarios, a través de una página web, con lo cual entraríamos en el mundo del &lt;em&gt;Internet de las cosas&lt;/em&gt;, e incluso podríamos crear algún tipo de análisis a partir de los datos guardados, y explorar el &lt;em&gt;machine learning&lt;/em&gt;, y la &lt;em&gt;inteligencia artificial&lt;/em&gt;.&lt;/p&gt;
@@ -47,7 +47,7 @@
  
  
 &lt;/div&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;computación-vs-usar-programas&quot;&gt;Computación &lt;em&gt;vs&lt;/em&gt; usar programas&lt;/h2&gt;
 
 &lt;p&gt;La computación y la programación son un mundo complicado. Hay muchos lenguajes, muchos métodos de generar contenido, y muchas herramientas.&lt;/p&gt;
@@ -94,7 +94,7 @@ En Python, las instrucciones de control &lt;b&gt;&lt;em&gt;for&lt;/em&gt;&lt;/b&
  
  
 &lt;/div&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dónde-están-los-artículos&quot;&gt;Dónde están los artículos.&lt;/h2&gt;
 
 &lt;p&gt;En el repositorio hay una carpeta llamada &lt;strong&gt;_posts&lt;/strong&gt;. En ella hay un archivo por cada artículo. El nombre del artículo debe tener la fecha y el título del artículo. En formato año-mes-día. Es decir, que un archivo puede llamarse “2021-09-15-Noticias-importantes.markdown”. Después, el nombre termina con un punto y la palabra &lt;em&gt;markdown&lt;/em&gt;.&lt;/p&gt;

@@ -19,7 +19,7 @@ Una estación meteorológica es un proyecto idóneo para hacer en el instituto: 
  {% unless forloop.last %}&nbsp;{% endunless %}
  {% endfor %}
 </div>
-
+<br>
 ## Cómo abordar este proyecto
 
 Podemos pensar en un dispositivo que de manera independiente es capaz de tomar datos del ambiente exterior y mostrarlos en una pantalla, o bien que sea capaz de conectarse a Internet y guardar datos en algún servicio de alojamiento de datos. También podríamos diseñarlo para que fuera interactivo con los usuarios, a través de una página web, con lo cual entraríamos en el mundo del *Internet de las cosas*, e incluso podríamos crear algún tipo de análisis a partir de los datos guardados, y explorar el *machine learning*, y la *inteligencia artificial*.

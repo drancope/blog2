@@ -18,7 +18,7 @@ En este artículo intentaré dar indicaciones para hacer cada uno de los artícu
  {% unless forloop.last %}&nbsp;{% endunless %}
  {% endfor %}
 </div>
-
+<br>
 ## Dónde están los artículos.
 
 En el repositorio hay una carpeta llamada **_posts**. En ella hay un archivo por cada artículo. El nombre del artículo debe tener la fecha y el título del artículo. En formato año-mes-día. Es decir, que un archivo puede llamarse "2021-09-15-Noticias-importantes.markdown". Después, el nombre termina con un punto y la palabra *markdown*.

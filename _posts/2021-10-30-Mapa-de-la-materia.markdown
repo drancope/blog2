@@ -18,7 +18,7 @@ Este blog pretende dar una idea general de qué ramas y contenidos aparecen en n
  {% unless forloop.last %}&nbsp;{% endunless %}
  {% endfor %}
 </div>
-
+<br>
 ## Computación *vs* usar programas
 
 La computación y la programación son un mundo complicado. Hay muchos lenguajes, muchos métodos de generar contenido, y muchas herramientas.
