@@ -2,7 +2,7 @@
 layout: post
 title:  "Abordar la construcción de una estación meteorológica"
 date:   2021-12-27 12:02:08 +0200
-categories: 2ESO
+category: 2ESO
 tags: ["Estación Meteorológica", "Proyectos"]
 author: drancope
 ---
@@ -34,7 +34,7 @@ En todos los sistemas automáticos hay un microcontrolador, sensores y actuadore
 
 Para medir la temperatura y la humedad encontramos un doble sensor, el DHT11.
 
-![sensor de temperatura y humedad](assets/dht11.jpg)
+![sensor de temperatura y humedad](/assets/dht11.jpg)
 
 Se conecta a una entrada digital, y ofrece los datos ya codificados. Basta con incluir la biblioteca de funciones disponible.
 
@@ -42,7 +42,7 @@ Se conecta a una entrada digital, y ofrece los datos ya codificados. Basta con i
 
 El sensor de presión atmosférica será el BMP180.
 
-![sensor de presión](assets/bmp180.jpeg)
+![sensor de presión](/assets/bmp180.jpeg)
 
 Este sensor, como el BMP185, tienen también una biblioteca de funciones que ofrece las rutinas necesarias para tomar los datos de presión, desde 300 hasta 1100 hPa. Se alimenta con 3.3 Voltios.
 
