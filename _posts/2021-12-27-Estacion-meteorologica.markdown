@@ -2,10 +2,22 @@
 layout: post
 title:  "Abordar la construcción de una estación meteorológica"
 date:   2021-12-27 12:02:08 +0200
-categories: 1ESO 2ESO 4ESO IoT estación_meteorológica
+categories: [1ESO, 2ESO, 4ESO, IoT, estación_meteorológica]
 author: drancope
 ---
-Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato. 
+Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.
+
+<div class="post-categories">
+ Categorías: {% if post %}
+   {% assign categories = post.categories %}
+ {% else %}
+   {% assign categories = page.categories %}
+ {% endif %}
+ {% for category in categories %}
+ <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+ {% unless forloop.last %}&nbsp;{% endunless %}
+ {% endfor %}
+</div>
 
 ## Cómo abordar este proyecto
 

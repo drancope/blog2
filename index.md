@@ -1,12 +1,13 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
+categories: [1ESO, 2ESO, 3ESO, 4ESO]
 ---
 <a href="index.html">Home</a> - <a href="about/index.html">About</a>
 
 <div class="post-categories">
+Categorías:
  {% if post %}
    {% assign categories = post.categories %}
  {% else %}

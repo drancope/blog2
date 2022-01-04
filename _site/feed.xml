@@ -1,7 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-30T23:57:01+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog de 3º de ESO</subtitle><entry><title type="html">Mapa de la materia</title><link href="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html" rel="alternate" type="text/html" title="Mapa de la materia" /><published>2021-10-30T10:31:58+02:00</published><updated>2021-10-30T10:31:58+02:00</updated><id>http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia</id><content type="html" xml:base="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html">&lt;p&gt;Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestra asignatura, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:28:26+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
-&lt;p&gt;La computación y la programación son un mundo complicado. Hay muchos lenguajes, muchos métodos de generar contenido, y muchas herramientas.
-Cuando no se ha practicado antes con ningún lenguaje, las &lt;em&gt;interfaces de desarrollo&lt;/em&gt; son algo extraño, que manejan archivos de lenguaje variado, y que organizan todo el material en carpetas que no conocemos.&lt;/p&gt;
+&lt;div class=&quot;post-categories&quot;&gt;
+ Categorías: 
+ 
+ &lt;a href=&quot;/categories/#1ESO&quot;&gt;1ESO&lt;/a&gt;
+ &amp;nbsp;
+ 
+ &lt;a href=&quot;/categories/#2ESO&quot;&gt;2ESO&lt;/a&gt;
+ &amp;nbsp;
+ 
+ &lt;a href=&quot;/categories/#4ESO&quot;&gt;4ESO&lt;/a&gt;
+ &amp;nbsp;
+ 
+ &lt;a href=&quot;/categories/#IoT&quot;&gt;IoT&lt;/a&gt;
+ &amp;nbsp;
+ 
+ &lt;a href=&quot;/categories/#estación_meteorológica&quot;&gt;estación_meteorológica&lt;/a&gt;
+ 
+ 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;cómo-abordar-este-proyecto&quot;&gt;Cómo abordar este proyecto&lt;/h2&gt;
+
+&lt;p&gt;Podemos pensar en un dispositivo que de manera independiente es capaz de tomar datos del ambiente exterior y mostrarlos en una pantalla, o bien que sea capaz de conectarse a Internet y guardar datos en algún servicio de alojamiento de datos. También podríamos diseñarlo para que fuera interactivo con los usuarios, a través de una página web, con lo cual entraríamos en el mundo del &lt;em&gt;Internet de las cosas&lt;/em&gt;, e incluso podríamos crear algún tipo de análisis a partir de los datos guardados, y explorar el &lt;em&gt;machine learning&lt;/em&gt;, y la &lt;em&gt;inteligencia artificial&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;El microcontrolador puede ser un arduino nano RP4020, o un dispositivo ESP8266, que pueden conectarse a la red para transmitir datos. El segundo es más barato y ligeramente más pequeño. Tiene, también, menos terminales de entrada/salida.&lt;/p&gt;
+
+&lt;h2 id=&quot;sensores&quot;&gt;Sensores&lt;/h2&gt;
+
+&lt;p&gt;En todos los sistemas automáticos hay un microcontrolador, sensores y actuadores. Para la estación meteorológica, tenemos que determinar qué datos son los que queremos tomar. Lo más importante será la temperatura, pero también es útil tomar la presión atmosférica y la humedad. Podríamos incluir un sensor de luminosidad ambiental, para intentar utilizar estos datos en correlación con los otros.&lt;/p&gt;
+
+&lt;h3 id=&quot;temperatura-y-humedad&quot;&gt;Temperatura y humedad&lt;/h3&gt;
+
+&lt;p&gt;Para medir la temperatura y la humedad encontramos un doble sensor, el DHT11.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./Imagenes/dht11.jpg&quot; alt=&quot;sensor de temperatura y humedad&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se conecta a una entrada digital, y ofrece los datos ya codificados. Basta con incluir la biblioteca de funciones disponible.&lt;/p&gt;
+
+&lt;h3 id=&quot;presión&quot;&gt;presión&lt;/h3&gt;
+
+&lt;p&gt;El sensor de presión atmosférica será el BMP180.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./Imagenes/bmp180.jpeg&quot; alt=&quot;sensor de presión&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este sensor, como el BMP185, tienen también una biblioteca de funciones que ofrece las rutinas necesarias para tomar los datos de presión, desde 300 hasta 1100 hPa. Se alimenta con 3.3 Voltios.&lt;/p&gt;
+
+&lt;h2 id=&quot;actuadores&quot;&gt;Actuadores&lt;/h2&gt;
+
+&lt;p&gt;La salida de datos puede hacerse mediante terminal serie, o incorporando una pantalla LCD, o transmitiendo los datos a un servidor externo.&lt;/p&gt;
+
+&lt;p&gt;Intentaremos probar los tres métodos, sucesivamente, para estudiar cómo se programa cada uno de ellos.&lt;/p&gt;</content><author><name>drancope</name></author><category term="1ESO" /><category term="2ESO" /><category term="4ESO" /><category term="IoT" /><category term="estación_meteorológica" /><summary type="html">Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.</summary></entry><entry><title type="html">Mapa de la materia</title><link href="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html" rel="alternate" type="text/html" title="Mapa de la materia" /><published>2021-10-30T10:31:58+02:00</published><updated>2021-10-30T10:31:58+02:00</updated><id>http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia</id><content type="html" xml:base="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html">&lt;p&gt;Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.&lt;/p&gt;
+
+&lt;div class=&quot;post-categories&quot;&gt;
+ Categorías: 
+ 
+ &lt;a href=&quot;/categories/#Novedades&quot;&gt;Novedades&lt;/a&gt;
+ 
+ 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;computación-vs-usar-programas&quot;&gt;Computación &lt;em&gt;vs&lt;/em&gt; usar programas&lt;/h2&gt;
+
+&lt;p&gt;La computación y la programación son un mundo complicado. Hay muchos lenguajes, muchos métodos de generar contenido, y muchas herramientas.&lt;/p&gt;
+
+&lt;p&gt;Cuando no se ha practicado antes con ningún lenguaje, las &lt;em&gt;interfaces de desarrollo&lt;/em&gt; son algo extraño, que manejan archivos de lenguaje variado, y que organizan todo el material en carpetas que no conocemos.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, muchos usuarios simplemente encienden el ordenador y no se preguntan qué hay detrás de todo eso.&lt;/p&gt;
+
+&lt;h2 id=&quot;servidores-y-clientes&quot;&gt;Servidores y clientes.&lt;/h2&gt;
 
 &lt;div class=&quot;bloque&quot;&gt;
 Hasta ahora hemos probado GitHub con lenguaje markdown, y AMPPS (Apache) con lenguaje html.&lt;br /&gt;
@@ -10,17 +77,6 @@ Con Apache, hemos buscado en nuestro ordenador las carpetas donde se guardan los
 html, para mover allí los documentos creados con un editor de texto, o con un programa de
 oficina que exporta al formato adecuado.
 &lt;/div&gt;
-
-&lt;table style=&quot;span: 10;&quot;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;
-       &lt;b&gt;hola&lt;/b&gt; hola
-    &lt;/td&gt;
-    &lt;td&gt;
-       &lt;b&gt;hola&lt;/b&gt; hola
-    &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
 
 &lt;h2 id=&quot;programar&quot;&gt;Programar&lt;/h2&gt;
 
@@ -32,7 +88,26 @@ En Python, las instrucciones de control &lt;b&gt;&lt;em&gt;for&lt;/em&gt;&lt;/b&
 
 &lt;p&gt;Después debemos manejar las variables complejas. Las listas y matrices requieren de una práctica abundante, para que con el tiempo podamos controlar si estamos utilizando los índices bien, para que los resultados sean correctos.&lt;/p&gt;
 
-&lt;p&gt;Este blog está hecho con &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. Puedes leer en inglés la documentación, en &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; si necesitas profundizar en su manejo.&lt;/p&gt;</content><author><name>drancope</name></author><category term="Novedades" /><summary type="html">Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestra asignatura, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.</summary></entry><entry><title type="html">Escribir un post</title><link href="http://localhost:4000/novedades/2021/10/26/Escribir-un-post.html" rel="alternate" type="text/html" title="Escribir un post" /><published>2021-10-26T12:31:58+02:00</published><updated>2021-10-26T12:31:58+02:00</updated><id>http://localhost:4000/novedades/2021/10/26/Escribir-un-post</id><content type="html" xml:base="http://localhost:4000/novedades/2021/10/26/Escribir-un-post.html">&lt;p&gt;En este artículo intentaré dar indicaciones para hacer cada uno de los artículos de un blog Jekyll.&lt;/p&gt;
+&lt;h2 id=&quot;robótica&quot;&gt;Robótica&lt;/h2&gt;
+
+&lt;p&gt;En los robots normalmente encontramos &lt;em&gt;partes móviles&lt;/em&gt;, pero también encontramos &lt;em&gt;sensores&lt;/em&gt;, y hay que programarlos mediante algún lenguaje de programación, ya que también tienen un &lt;em&gt;microprocesador&lt;/em&gt; para realizar sus tareas.&lt;/p&gt;
+
+&lt;p&gt;No todos los robots tienen aspecto de &lt;em&gt;robot&lt;/em&gt;. Existen muchas máquinas que realizan trabajos de manera autónoma, y que están formadas por un microcontrolador con sensores y actuadores. Por ejemplo, una cafetera moderna, o un medidor de tensión arterial, o una estación meteorológica electrónica.&lt;/p&gt;
+
+&lt;p&gt;Para poder estudiar robótica hay que dividir todos estos aspectos en proyectos y estudios más sencillos.&lt;/p&gt;
+
+&lt;h4 id=&quot;info&quot;&gt;&lt;em&gt;info&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;Este blog está hecho con &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. Puedes leer en inglés la documentación, en &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; si necesitas profundizar en su manejo.&lt;/p&gt;</content><author><name>drancope</name></author><category term="Novedades" /><summary type="html">Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.</summary></entry><entry><title type="html">Escribir un post</title><link href="http://localhost:4000/3eso/2021/10/26/Escribir-un-post.html" rel="alternate" type="text/html" title="Escribir un post" /><published>2021-10-26T12:31:58+02:00</published><updated>2021-10-26T12:31:58+02:00</updated><id>http://localhost:4000/3eso/2021/10/26/Escribir-un-post</id><content type="html" xml:base="http://localhost:4000/3eso/2021/10/26/Escribir-un-post.html">&lt;p&gt;En este artículo intentaré dar indicaciones para hacer cada uno de los artículos de un blog Jekyll.&lt;/p&gt;
+
+&lt;div class=&quot;post-categories&quot;&gt;
+ Categorías: 
+ 
+ &lt;a href=&quot;/categories/#3ESO&quot;&gt;3ESO&lt;/a&gt;
+ 
+ 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;dónde-están-los-artículos&quot;&gt;Dónde están los artículos.&lt;/h2&gt;
 
 &lt;p&gt;En el repositorio hay una carpeta llamada &lt;strong&gt;_posts&lt;/strong&gt;. En ella hay un archivo por cada artículo. El nombre del artículo debe tener la fecha y el título del artículo. En formato año-mes-día. Es decir, que un archivo puede llamarse “2021-09-15-Noticias-importantes.markdown”. Después, el nombre termina con un punto y la palabra &lt;em&gt;markdown&lt;/em&gt;.&lt;/p&gt;
 
@@ -56,4 +131,5 @@ En Python, las instrucciones de control &lt;b&gt;&lt;em&gt;for&lt;/em&gt;&lt;/b&
 
 &lt;div class=&quot;bloque&quot;&gt;
 La generación de un cuadro como éste requiere crear un código de estilo, que guardamos en un archivo dentro de la carpeta _sass y escribir una llamada a ese archivo dentro de otro que se carga automáticamente en la cabecera de la página web.
-&lt;/div&gt;</content><author><name>drancope</name></author><category term="Novedades" /><summary type="html">En este artículo intentaré dar indicaciones para hacer cada uno de los artículos de un blog Jekyll.</summary></entry></feed>
+&lt;/div&gt;
+&lt;p&gt;Esto sería todo por hoy.&lt;/p&gt;</content><author><name>drancope</name></author><category term="3ESO" /><summary type="html">En este artículo intentaré dar indicaciones para hacer cada uno de los artículos de un blog Jekyll.</summary></entry></feed>

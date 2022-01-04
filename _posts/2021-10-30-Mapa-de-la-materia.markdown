@@ -7,9 +7,27 @@ author: drancope
 ---
 Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.
 
+<div class="post-categories">
+ Categorías: {% if post %}
+   {% assign categories = post.categories %}
+ {% else %}
+   {% assign categories = page.categories %}
+ {% endif %}
+ {% for category in categories %}
+ <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+ {% unless forloop.last %}&nbsp;{% endunless %}
+ {% endfor %}
+</div>
+
+## Computación *vs* usar programas
+
 La computación y la programación son un mundo complicado. Hay muchos lenguajes, muchos métodos de generar contenido, y muchas herramientas.
 
 Cuando no se ha practicado antes con ningún lenguaje, las *interfaces de desarrollo* son algo extraño, que manejan archivos de lenguaje variado, y que organizan todo el material en carpetas que no conocemos.
+
+Sin embargo, muchos usuarios simplemente encienden el ordenador y no se preguntan qué hay detrás de todo eso.
+
+## Servidores y clientes.
 
 <div class="bloque">
 Hasta ahora hemos probado GitHub con lenguaje markdown, y AMPPS (Apache) con lenguaje html.<br>
