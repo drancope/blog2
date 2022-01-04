@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:28:26+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:30:03+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
@@ -34,7 +34,7 @@
 
 &lt;p&gt;Para medir la temperatura y la humedad encontramos un doble sensor, el DHT11.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;./Imagenes/dht11.jpg&quot; alt=&quot;sensor de temperatura y humedad&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;Imagenes/dht11.jpg&quot; alt=&quot;sensor de temperatura y humedad&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Se conecta a una entrada digital, y ofrece los datos ya codificados. Basta con incluir la biblioteca de funciones disponible.&lt;/p&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;El sensor de presión atmosférica será el BMP180.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;./Imagenes/bmp180.jpeg&quot; alt=&quot;sensor de presión&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;Imagenes/bmp180.jpeg&quot; alt=&quot;sensor de presión&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Este sensor, como el BMP185, tienen también una biblioteca de funciones que ofrece las rutinas necesarias para tomar los datos de presión, desde 300 hasta 1100 hPa. Se alimenta con 3.3 Voltios.&lt;/p&gt;
 
