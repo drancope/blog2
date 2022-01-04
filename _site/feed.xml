@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:30:03+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/1eso/2eso/4eso/iot/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:32:47+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/1eso,/2eso,/4eso,/iot,/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/1eso,/2eso,/4eso,/iot,/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/1eso,/2eso,/4eso,/iot,/estaci%C3%B3n_meteorol%C3%B3gica/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
  
- &lt;a href=&quot;/categories/#1ESO&quot;&gt;1ESO&lt;/a&gt;
+ &lt;a href=&quot;/categories/#1ESO,&quot;&gt;1ESO,&lt;/a&gt;
  &amp;nbsp;
  
- &lt;a href=&quot;/categories/#2ESO&quot;&gt;2ESO&lt;/a&gt;
+ &lt;a href=&quot;/categories/#2ESO,&quot;&gt;2ESO,&lt;/a&gt;
  &amp;nbsp;
  
- &lt;a href=&quot;/categories/#4ESO&quot;&gt;4ESO&lt;/a&gt;
+ &lt;a href=&quot;/categories/#4ESO,&quot;&gt;4ESO,&lt;/a&gt;
  &amp;nbsp;
  
- &lt;a href=&quot;/categories/#IoT&quot;&gt;IoT&lt;/a&gt;
+ &lt;a href=&quot;/categories/#IoT,&quot;&gt;IoT,&lt;/a&gt;
  &amp;nbsp;
  
  &lt;a href=&quot;/categories/#estación_meteorológica&quot;&gt;estación_meteorológica&lt;/a&gt;
@@ -50,7 +50,7 @@
 
 &lt;p&gt;La salida de datos puede hacerse mediante terminal serie, o incorporando una pantalla LCD, o transmitiendo los datos a un servidor externo.&lt;/p&gt;
 
-&lt;p&gt;Intentaremos probar los tres métodos, sucesivamente, para estudiar cómo se programa cada uno de ellos.&lt;/p&gt;</content><author><name>drancope</name></author><category term="1ESO" /><category term="2ESO" /><category term="4ESO" /><category term="IoT" /><category term="estación_meteorológica" /><summary type="html">Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.</summary></entry><entry><title type="html">Mapa de la materia</title><link href="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html" rel="alternate" type="text/html" title="Mapa de la materia" /><published>2021-10-30T10:31:58+02:00</published><updated>2021-10-30T10:31:58+02:00</updated><id>http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia</id><content type="html" xml:base="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html">&lt;p&gt;Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.&lt;/p&gt;
+&lt;p&gt;Intentaremos probar los tres métodos, sucesivamente, para estudiar cómo se programa cada uno de ellos.&lt;/p&gt;</content><author><name>drancope</name></author><category term="1ESO," /><category term="2ESO," /><category term="4ESO," /><category term="IoT," /><category term="estación_meteorológica" /><summary type="html">Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.</summary></entry><entry><title type="html">Mapa de la materia</title><link href="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html" rel="alternate" type="text/html" title="Mapa de la materia" /><published>2021-10-30T10:31:58+02:00</published><updated>2021-10-30T10:31:58+02:00</updated><id>http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia</id><content type="html" xml:base="http://localhost:4000/novedades/2021/10/30/Mapa-de-la-materia.html">&lt;p&gt;Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
