@@ -5,9 +5,11 @@ date:   2021-12-27 12:02:08 +0200
 categories: 1ESO 2ESO 4ESO IoT estación_meteorológica
 author: drancope
 ---
+Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato. 
+
 ## Cómo abordar este proyecto
 
-Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato. Podemos pensar en un dispositivo que de manera independiente es capaz de tomar datos del ambiente exterior y mostrarlos en una pantalla, o bien que sea capaz de conectarse a Internet y guardar datos en algún servicio de alojamiento de datos. También podríamos diseñarlo para que fuera interactivo con los usuarios, a través de una página web, con lo cual entraríamos en el mundo del *Internet de las cosas*, e incluso podríamos crear algún tipo de análisis a partir de los datos guardados, y explorar el *machine learning*, y la *inteligencia artificial*.
+Podemos pensar en un dispositivo que de manera independiente es capaz de tomar datos del ambiente exterior y mostrarlos en una pantalla, o bien que sea capaz de conectarse a Internet y guardar datos en algún servicio de alojamiento de datos. También podríamos diseñarlo para que fuera interactivo con los usuarios, a través de una página web, con lo cual entraríamos en el mundo del *Internet de las cosas*, e incluso podríamos crear algún tipo de análisis a partir de los datos guardados, y explorar el *machine learning*, y la *inteligencia artificial*.
 
 El microcontrolador puede ser un arduino nano RP4020, o un dispositivo ESP8266, que pueden conectarse a la red para transmitir datos. El segundo es más barato y ligeramente más pequeño. Tiene, también, menos terminales de entrada/salida.
 
