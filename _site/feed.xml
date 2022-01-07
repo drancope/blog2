@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-04T21:53:42+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-07T20:48:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Empezar con Arduino</title><link href="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html" rel="alternate" type="text/html" title="Empezar con Arduino" /><published>2022-01-04T20:59:58+01:00</published><updated>2022-01-04T20:59:58+01:00</updated><id>http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino</id><content type="html" xml:base="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html">&lt;p&gt;Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.&lt;/p&gt;
+
+&lt;div class=&quot;post-categories&quot;&gt;
+ Categorías: 
+ 
+ &lt;a href=&quot;/categories/#4ESO&quot;&gt;4ESO&lt;/a&gt;
+ 
+ 
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;index&quot;&gt;Index&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;qué es&lt;/li&gt;
+  &lt;li&gt;cómo se conecta&lt;/li&gt;
+  &lt;li&gt;descargar programas y extensiones&lt;/li&gt;
+  &lt;li&gt;lenguaje: generalidades&lt;/li&gt;
+  &lt;li&gt;sintaxis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;microcontroladores-y-arduino&quot;&gt;Microcontroladores y Arduino&lt;/h2&gt;
+
+&lt;p&gt;Un &lt;strong&gt;microprocesador&lt;/strong&gt; es un circuito muy complejo, que realiza tareas de &lt;em&gt;computación&lt;/em&gt; y podríamos decir que es el cerebro principal de un sistema completo, como un &lt;em&gt;ordenador&lt;/em&gt;. La diferencia entre el &lt;em&gt;microprocesador&lt;/em&gt; y el &lt;em&gt;ordenador&lt;/em&gt; es que el primero solamente es el circuito, que generalmente va construido dentro de una pastilla de plástico, y el segundo tiene otros componentes que permiten que el microprocesador se conecte con el mundo exterior. Esto incluye &lt;em&gt;memorias RAM&lt;/em&gt;, &lt;em&gt;discos duros&lt;/em&gt;, &lt;em&gt;ratón&lt;/em&gt;, &lt;em&gt;teclado&lt;/em&gt;, &lt;em&gt;Internet&lt;/em&gt;, &lt;em&gt;pantalla&lt;/em&gt;, y montones de aparatos más.&lt;/p&gt;
+
+&lt;p&gt;Un &lt;strong&gt;microcontrolador&lt;/strong&gt; es un circuito parecido al microprocesador, pero que está fabricado para conectarse con más facilidad a los dispositivos más sencillos del mundo exterior: &lt;em&gt;transistores, LEDs, botones, pantallas&lt;/em&gt; simples o pequeños &lt;em&gt;servo-motores&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div style=&quot;margin-left: auto; margin-right: auto; width: 80%;&quot;&gt;
+    &lt;table&gt;
+      &lt;tr style=&quot;padding: 10px;&quot;&gt;
+        &lt;td style=&quot;width: 50%;&quot;&gt;
+          &lt;img style=&quot; border-style: solid;height: 110%;&quot; src=&quot;/assets/microprocesadores.jpeg&quot; /&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;img style=&quot; border-style: solid;&quot; src=&quot;/assets/microcontroladores.jpeg&quot; /&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          Microprocesadores: Tienen una alta velocidad y capacidad de tratamiento de datos. Se usan en ordenadores.
+        &lt;/td&gt;
+        &lt;td&gt;
+          Microcontroladores: Son más pequeños, y tienen menor consumo eléctrico. Al tener menor capacidad de procesamiento, se usan en gran cantidad de aparatos que necesitan control automático.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Con frecuencia, los microcontroladores se montan sobre placas que amplian un poco lo que ellos pueden hacer. Por ejemplo, es común incorporar en la placa un conector &lt;strong&gt;USB&lt;/strong&gt; para conectar el microcontrolador al ordenador. También suele añadirse un &lt;strong&gt;LED&lt;/strong&gt; para que los usuarios lo programen.&lt;/p&gt;
+
+&lt;div style=&quot;margin-left: auto; margin-right: auto; width: 80%;&quot;&gt;
+    &lt;table&gt;
+      &lt;tr style=&quot;padding: 10px;&quot;&gt;
+        &lt;td style=&quot;width: 50%;&quot;&gt;
+          &lt;img style=&quot; border-style: solid;height: 110%;&quot; src=&quot;/assets/microbit.jpeg&quot; /&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;img style=&quot; border-style: solid;&quot; src=&quot;/assets/arduinouno.jpeg&quot; /&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+        La tarjeta &lt;b&gt;Micro:bit&lt;/b&gt; monta un conjunto de 25 diodos y dos botones que pueden programarse. También lleva un micrófono, y un altavoz, un sensor de temperatura, y una brújula.
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;b&gt;Arduino&lt;/b&gt; es algo más sencillo, solo tiene el conector USB y un LED, pero trae unas piezas de plástico para insertar cables de nuevos circuitos, cosa que &lt;b&gt;Micro:bit&lt;/b&gt; no tiene.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Otros modelos de tarjetas microcontroladoras son las que usan los &lt;em&gt;chips&lt;/em&gt; &lt;strong&gt;PIC&lt;/strong&gt;, las que usan el sistema de programación &lt;strong&gt;mbed&lt;/strong&gt; con chips &lt;strong&gt;Arm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Existen varios fabricantes de microcontroladores, y algunos de ellos fabrican varios tipos de ellos, con &lt;em&gt;arquitecturas&lt;/em&gt; distintas. Podemos hablar de &lt;strong&gt;&lt;em&gt;familias&lt;/em&gt;&lt;/strong&gt; de microcontroladores, según el tipo de &lt;em&gt;arquitectura&lt;/em&gt; con la que se han diseñado. Son ejemplos de ellos las familias &lt;em&gt;Cortex&lt;/em&gt;, &lt;em&gt;Z8&lt;/em&gt;, &lt;em&gt;PIC&lt;/em&gt; o &lt;em&gt;COP&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;bloque&quot;&gt;
+&lt;b&gt;Ejercicio:&lt;/b&gt; Muchas de las palabras que aparecen en este texto son nombres de distintas tecnologías o empresas que estamos revisando. Puedes elegir cinco o seis de estas palabras que no estás acostumbrado a manejar, y buscarlas en Internet. Te llevarán a distintas páginas, algunas más fáciles de leer, otras que simplemente venden productos, y otras te ofrecen &lt;em&gt;tutoriales&lt;/em&gt; para montar proyectos. Leyendo varias de ellas te construiras un esquema mental de a qué se refiere cada una, de qué tipo de tecnología se trata, y para qué puede usarse. En tus próximas investigaciones, será frecuente tener que buscar muchos componentes o dispositivos para saber qué son.
+&lt;/div&gt;
+
+&lt;h3 id=&quot;hardware-libre&quot;&gt;Hardware libre&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Arduino&lt;/strong&gt; se diseñó para ser copiado: la empresa que lo creó proporcionó una licencia de uso libre de su diseño. Así han conseguido que este modelo de tarjeta con microcontrolador sea el más usado y conocido del mundo. La mayoría de las tarjetas &lt;strong&gt;Arduino&lt;/strong&gt; tienen un &lt;em&gt;microcontrolador&lt;/em&gt; de la marca &lt;strong&gt;Atmel&lt;/strong&gt;, aunque otras más modernas utilizan microcontroladores &lt;strong&gt;Arm Cortex&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Existen distintas tarjetas bajo la familia &lt;strong&gt;Arduino&lt;/strong&gt;. La más corriente es el &lt;strong&gt;Arduino UNO&lt;/strong&gt;. Otros modelos son el &lt;strong&gt;mini&lt;/strong&gt;, el &lt;strong&gt;Leonardo&lt;/strong&gt;, el &lt;strong&gt;nano&lt;/strong&gt; o el &lt;strong&gt;Mega&lt;/strong&gt;. Cada uno se diferencia de los demás en distintas cosas, como puede ser el modelo de microcontrolador, su memoria o su velocidad, o el tipo de conexión hacia el ordenador (podría incluso no tener ninguna), o la cantidad de terminales para conectar.&lt;/p&gt;
+
+&lt;p&gt;Como los fabricantes tienen derecho a copiar y modificar el diseño, para hacer el suyo propio, podemos encontrar modelos ligeramente distintos. Algunos tienen un chip de comunicaciones USB diferente, y otros tienen un microcontrolador distinto, de otro fabricante.&lt;/p&gt;
+
+&lt;p&gt;Para hacer funcionar estos modelos, hay que instalar a veces algún &lt;em&gt;driver&lt;/em&gt; o alguna biblioteca de tarjetas distinta.&lt;/p&gt;
+
+&lt;p&gt;Las variedades más comunes, que podemos encontrar a precio muy económico en Intenet, son las que llevan la interfaz USB &lt;strong&gt;ch340&lt;/strong&gt;, y la que tiene el chip de la familia &lt;strong&gt;lgt8f&lt;/strong&gt;, fabricado por la compañía &lt;em&gt;Logic Green&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div style=&quot;margin-left: auto; margin-right: auto; width: 80%;&quot;&gt;
+    &lt;table&gt;
+      &lt;tr style=&quot;padding: 10px;&quot;&gt;
+        &lt;td style=&quot;width: 50%;&quot;&gt;
+          &lt;img style=&quot; border-style: solid;height: 110%;&quot; src=&quot;/assets/ch340.jpeg&quot; /&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;img style=&quot; border-style: solid;&quot; src=&quot;/assets/lgt8.jpeg&quot; /&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+        Esta tarjeta inspirada en el Arduino UNO tiene un microcontrolador de tamaño más pequeño que el original, aunque del mismo tipo. A la izquierda vemos señalado también el chip ch340. Para usarla, hay que instalar en el ordenador con el que programamos el driver adecuado:&lt;br /&gt;
+        &lt;a href=&quot;https://www.geekfactory.mx/tutoriales-arduino/driver-ch340-para-arduino-chinos-o-genericos/&quot;&gt;driver ch340&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          En esta &quot;copia&quot; del famoso UNO se utiliza el chip lgt8f328. El color rojo no quiere decir nada. Este microcontrolador tiene un conjunto de programas que se añaden a la instalación de Arduino del ordenador. Hay que descargar el paquete y descomprimirlo, y luego copiar las carpetas en nuestra carpeta de instalación:&lt;br /&gt;
+          &lt;a href=&quot;https://drive.google.com/drive/folders/19K9qp-LhdUtl7kuAr4--0e4DROUmyaKc&quot;&gt;drivers lgt8 de wagvat&lt;/a&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;También encontramos los dispositivos &lt;strong&gt;ESP8266&lt;/strong&gt;. Estas tarjetas tienen incluida la posibilidad de conectarse a una red &lt;em&gt;wifi&lt;/em&gt; sin necesidad de módulos de expansión.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/wemos.png&quot; alt=&quot;Wemos ESP8266&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;programas-para-programar&quot;&gt;Programas para programar&lt;/h2&gt;
+
+&lt;p&gt;La &lt;a href=&quot;https://www.arduino.cc/en/software&quot;&gt;Interfaz de desarrollo Arduino&lt;/a&gt; está disponible para descarga en dos versiones. La versión &lt;em&gt;estable&lt;/em&gt; es la 1.8, y tiene menos funcionalidades que la versión nueva 2.0. Esta última está en versión de prueba, pero ayuda a gestionar mejor la biblioteca de tarjetas y de programas de extensión.&lt;/p&gt;
+
+&lt;p&gt;Una vez que la hayamos descargado e instalado, nos creará una carpeta llamada &lt;em&gt;Arduino&lt;/em&gt; en nuestra carpeta de usuario del ordenador. Allí podemos instalar las librerías de ampliación que descarguemos, y se guardarán nuestros programas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/arduinoide.png&quot; alt=&quot;Ide Arduino&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Desde el menú “&lt;em&gt;herramientas&lt;/em&gt;” podremos seleccionar la tarjeta que vamos a conectar, y el número de conector (&lt;em&gt;puerto&lt;/em&gt;) en el que la enchufamos. Si tenemos un arduino UNO, basta con elegir esta tarjeta o “&lt;em&gt;board&lt;/em&gt;”, y elegir el puerto adecuado, que en Windows toma los nombres COM1, COM2, etc., y en Linux suele ser ttyUSB0, ttyUSB1, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/puerto_arduino1.png&quot; alt=&quot;Selección de puerto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si elegimos el puerto equivocado, no podremos comunicarnos con la tarjeta. Afortunadamente, al lado del nombre correcto de puerto suele aparecer la placa que se ha detectado.&lt;/p&gt;
+
+&lt;h1 id=&quot;primer-programa&quot;&gt;Primer programa&lt;/h1&gt;
+
+&lt;p&gt;En el menú &lt;em&gt;Archivo&lt;/em&gt; tenemos un apartado de &lt;strong&gt;ejemplos&lt;/strong&gt;. Probaremos en primer lugar el programa &lt;strong&gt;&lt;em&gt;blink&lt;/em&gt;&lt;/strong&gt;, que simplemente hace parpadear el led de la tarjeta. Si no hay problemas de comunicaciones, el botón de la flecha hacia la derecha convertirá el programa desde &lt;em&gt;código fuente&lt;/em&gt; a &lt;em&gt;programa objeto&lt;/em&gt; y lo copiará a través del cable usb en la memoria &lt;em&gt;flash&lt;/em&gt; del microcontrolador. El LED parpadeará.&lt;/p&gt;
+
+&lt;p&gt;Cambiando el número dentro de los paréntesis del &lt;em&gt;delay&lt;/em&gt; (1000 corresponde a un segundo) por un número más bajo, por ejemplo 400, veremos que el ritmo del parpadeo cambia.&lt;/p&gt;
+
+&lt;p&gt;Todos estos pasos están descritos con detalles, fotografías, consejos y frecuentemente con videos explicativos en una infinidad de páginas web. Y a partir de aquí, encontraremos los siguientes tutoriales, para continuar avanzando en nuestro aprendizaje.&lt;/p&gt;</content><author><name>drancope</name></author><category term="4ESO" /><category term="Programación" /><category term="Microcontroladores" /><summary type="html">Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.</summary></entry><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
