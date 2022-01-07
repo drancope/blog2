@@ -6,7 +6,7 @@ categories: 4ESO
 tags: ["Programación", "Microcontroladores"]
 author: drancope
 ---
-Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.
+En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.
 
 <div class="post-categories">
  Categorías: {% if post %}
@@ -21,13 +21,6 @@ Este blog pretende dar una idea general de qué ramas y contenidos aparecen en n
 </div>
 <br>
 
-## Index
-
-- qué es
-- cómo se conecta
-- descargar programas y extensiones
-- lenguaje: generalidades
-- sintaxis
 
 ## Microcontroladores y Arduino
 
@@ -130,6 +123,8 @@ También encontramos los dispositivos **ESP8266**. Estas tarjetas tienen incluid
 
 La [Interfaz de desarrollo Arduino](https://www.arduino.cc/en/software) está disponible para descarga en dos versiones. La versión *estable* es la 1.8, y tiene menos funcionalidades que la versión nueva 2.0. Esta última está en versión de prueba, pero ayuda a gestionar mejor la biblioteca de tarjetas y de programas de extensión.
 
+En general, una *Interfaz de desarrollo* se suele llamar **IDE** de manera abreviada.
+
 Una vez que la hayamos descargado e instalado, nos creará una carpeta llamada *Arduino* en nuestra carpeta de usuario del ordenador. Allí podemos instalar las librerías de ampliación que descarguemos, y se guardarán nuestros programas.
 
 ![Ide Arduino](/assets/arduinoide.png)
@@ -140,10 +135,57 @@ Desde el menú "*herramientas*" podremos seleccionar la tarjeta que vamos a cone
 
 Si elegimos el puerto equivocado, no podremos comunicarnos con la tarjeta. Afortunadamente, al lado del nombre correcto de puerto suele aparecer la placa que se ha detectado.
 
-# Primer programa
+## Primer programa
 
 En el menú *Archivo* tenemos un apartado de **ejemplos**. Probaremos en primer lugar el programa ***blink***, que simplemente hace parpadear el led de la tarjeta. Si no hay problemas de comunicaciones, el botón de la flecha hacia la derecha convertirá el programa desde *código fuente* a *programa objeto* y lo copiará a través del cable usb en la memoria *flash* del microcontrolador. El LED parpadeará.
 
 Cambiando el número dentro de los paréntesis del *delay* (1000 corresponde a un segundo) por un número más bajo, por ejemplo 400, veremos que el ritmo del parpadeo cambia.
 
 Todos estos pasos están descritos con detalles, fotografías, consejos y frecuentemente con videos explicativos en una infinidad de páginas web. Y a partir de aquí, encontraremos los siguientes tutoriales, para continuar avanzando en nuestro aprendizaje.
+
+### Estructura de un programa
+
+La *interfaz de desarrollo* de arduino es capaz de tomar el *código fuente* en un lenguaje llamado también *Arduino*, que está fuertemente basado en otro llamado [Wiring](https://es.wikipedia.org/wiki/Wiring), que, a su vez, está basado en [Processing](https://es.wikipedia.org/wiki/Processing), y que, en el fondo, es muy muy parecido a **c++**.
+
+La operación que hace el programa Arduino al leer el *código fuente* escrito por nosotros y convertirlo a *objeto* (es decir, *lenguaje máquina*), se llama **compilación**. La *interfaz de desarrollo* contiene, por lo tanto, un *compilador*. C++ es un lenguaje "compilado". Hay otros lenguajes que son "interpretados", como Python.
+
+El microcontrolador no puede entender el programa escrito por nosotros en la *Interfaz de desarrollo*
+
+Los programas de arduino *deben* describir dos funciones: **setup()** y **loop()**.
+
+Para tener esto más claro, una función es un fragmento de programa aislado, que puede ejecutarse desde un programa principal, o desde un programa secundario, o desde otra función.
+
+**setup()** y **loop()** son el programa principal que funcionará en el microcontrolador. La primera de ellas, **setup()**, funcionará solamente una vez, cada vez que se encienda el microprocesador. Una vez que termina esta función, empezará a funcionar la segunda, **loop()**, y en cuanto termine de ejecutarse, se repetirá otra vez, y así de manera indefinida mientras exista alimentación eléctrica en la placa del microcontrolador.
+```c++
+void setup() {
+  //las instrucciones escritas aquí
+  //solo se ejecutan una vez tras encender.
+}
+
+void loop() {
+  /*
+    Estas instrucciones se ejecutan después
+    de las de setup(), y se repiten para siempre,
+    mientras haya electricidad en la placa
+  */
+}
+```
+
+El programa de arriba muestra las dos funciones, *setup()* y *loop()*, y las instrucciones que serán su descripcción deben escribirse entre llaves.
+
+En este ejemplo, las instrucciones escritas *no hacen nada*, puesto que se trata de ***comentarios***, cuya función es explicar algo del funcionamiento al lector del programa (y al propio autor, ya que es frecuente que incluso el programador necesite recordar qué es lo que hacía el programa cuando pasa un tiempo desde que lo creó). Hay comentarios de una sola línea, o de varias líneas. En cualquier momento en que en una línea, al principio o a mitad, aparezcan los caracteres **//**, el resto de la línea se considera un comentario, y el *compilador* de Arduino no analizará el texto hasta el final de la línea. Los comentarios también pueden empezar con **/\*** y terminar con **\*/**, ocupando varias líneas.
+
+Nuestra *IDE* de arduino tiene también un *resaltador de código*, que es capaz de hacer una lectura del programa reconociendo palabras clave, y asignándoles un color. Esto ayuda a que los programadores o lectores del programa puedan detectar algunos errores sencillos solamente mirando el color del texto.
+
+### Instrucciones
+
+Todas las instrucciones del lenguaje Arduino, como las de C y C++, deben terminar con punto y coma, ;
+
+Algunas instrucciones serán palabras reservadas, otras tendrán operaciones, y otras serán "llamadas" a funciones. A veces, combinaremos varias de estas opciones en una instrucción:
+
+```c++
+// Esta instrucción crea una variable, usando
+// la palabra reservada "int"
+int contador;
+
+```

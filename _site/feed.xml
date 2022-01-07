@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-07T20:48:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Empezar con Arduino</title><link href="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html" rel="alternate" type="text/html" title="Empezar con Arduino" /><published>2022-01-04T20:59:58+01:00</published><updated>2022-01-04T20:59:58+01:00</updated><id>http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino</id><content type="html" xml:base="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html">&lt;p&gt;Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-07T22:03:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Empezar con Arduino</title><link href="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html" rel="alternate" type="text/html" title="Empezar con Arduino" /><published>2022-01-04T20:59:58+01:00</published><updated>2022-01-04T20:59:58+01:00</updated><id>http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino</id><content type="html" xml:base="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html">&lt;p&gt;En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
@@ -8,16 +8,6 @@
  
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;index&quot;&gt;Index&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;qué es&lt;/li&gt;
-  &lt;li&gt;cómo se conecta&lt;/li&gt;
-  &lt;li&gt;descargar programas y extensiones&lt;/li&gt;
-  &lt;li&gt;lenguaje: generalidades&lt;/li&gt;
-  &lt;li&gt;sintaxis&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h2 id=&quot;microcontroladores-y-arduino&quot;&gt;Microcontroladores y Arduino&lt;/h2&gt;
 
@@ -120,6 +110,8 @@
 
 &lt;p&gt;La &lt;a href=&quot;https://www.arduino.cc/en/software&quot;&gt;Interfaz de desarrollo Arduino&lt;/a&gt; está disponible para descarga en dos versiones. La versión &lt;em&gt;estable&lt;/em&gt; es la 1.8, y tiene menos funcionalidades que la versión nueva 2.0. Esta última está en versión de prueba, pero ayuda a gestionar mejor la biblioteca de tarjetas y de programas de extensión.&lt;/p&gt;
 
+&lt;p&gt;En general, una &lt;em&gt;Interfaz de desarrollo&lt;/em&gt; se suele llamar &lt;strong&gt;IDE&lt;/strong&gt; de manera abreviada.&lt;/p&gt;
+
 &lt;p&gt;Una vez que la hayamos descargado e instalado, nos creará una carpeta llamada &lt;em&gt;Arduino&lt;/em&gt; en nuestra carpeta de usuario del ordenador. Allí podemos instalar las librerías de ampliación que descarguemos, y se guardarán nuestros programas.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/arduinoide.png&quot; alt=&quot;Ide Arduino&quot; /&gt;&lt;/p&gt;
@@ -130,13 +122,58 @@
 
 &lt;p&gt;Si elegimos el puerto equivocado, no podremos comunicarnos con la tarjeta. Afortunadamente, al lado del nombre correcto de puerto suele aparecer la placa que se ha detectado.&lt;/p&gt;
 
-&lt;h1 id=&quot;primer-programa&quot;&gt;Primer programa&lt;/h1&gt;
+&lt;h2 id=&quot;primer-programa&quot;&gt;Primer programa&lt;/h2&gt;
 
 &lt;p&gt;En el menú &lt;em&gt;Archivo&lt;/em&gt; tenemos un apartado de &lt;strong&gt;ejemplos&lt;/strong&gt;. Probaremos en primer lugar el programa &lt;strong&gt;&lt;em&gt;blink&lt;/em&gt;&lt;/strong&gt;, que simplemente hace parpadear el led de la tarjeta. Si no hay problemas de comunicaciones, el botón de la flecha hacia la derecha convertirá el programa desde &lt;em&gt;código fuente&lt;/em&gt; a &lt;em&gt;programa objeto&lt;/em&gt; y lo copiará a través del cable usb en la memoria &lt;em&gt;flash&lt;/em&gt; del microcontrolador. El LED parpadeará.&lt;/p&gt;
 
 &lt;p&gt;Cambiando el número dentro de los paréntesis del &lt;em&gt;delay&lt;/em&gt; (1000 corresponde a un segundo) por un número más bajo, por ejemplo 400, veremos que el ritmo del parpadeo cambia.&lt;/p&gt;
 
-&lt;p&gt;Todos estos pasos están descritos con detalles, fotografías, consejos y frecuentemente con videos explicativos en una infinidad de páginas web. Y a partir de aquí, encontraremos los siguientes tutoriales, para continuar avanzando en nuestro aprendizaje.&lt;/p&gt;</content><author><name>drancope</name></author><category term="4ESO" /><category term="Programación" /><category term="Microcontroladores" /><summary type="html">Este blog pretende dar una idea general de qué ramas y contenidos aparecen en nuestras asignaturas, y resumir las herramientas que podemos usar, no solo para realizar el trabajo de aprendizaje, sino para aprender acerca de ellas mimas.</summary></entry><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
+&lt;p&gt;Todos estos pasos están descritos con detalles, fotografías, consejos y frecuentemente con videos explicativos en una infinidad de páginas web. Y a partir de aquí, encontraremos los siguientes tutoriales, para continuar avanzando en nuestro aprendizaje.&lt;/p&gt;
+
+&lt;h3 id=&quot;estructura-de-un-programa&quot;&gt;Estructura de un programa&lt;/h3&gt;
+
+&lt;p&gt;La &lt;em&gt;interfaz de desarrollo&lt;/em&gt; de arduino es capaz de tomar el &lt;em&gt;código fuente&lt;/em&gt; en un lenguaje llamado también &lt;em&gt;Arduino&lt;/em&gt;, que está fuertemente basado en otro llamado &lt;a href=&quot;https://es.wikipedia.org/wiki/Wiring&quot;&gt;Wiring&lt;/a&gt;, que, a su vez, está basado en &lt;a href=&quot;https://es.wikipedia.org/wiki/Processing&quot;&gt;Processing&lt;/a&gt;, y que, en el fondo, es muy muy parecido a &lt;strong&gt;c++&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La operación que hace el programa Arduino al leer el &lt;em&gt;código fuente&lt;/em&gt; escrito por nosotros y convertirlo a &lt;em&gt;objeto&lt;/em&gt; (es decir, &lt;em&gt;lenguaje máquina&lt;/em&gt;), se llama &lt;strong&gt;compilación&lt;/strong&gt;. La &lt;em&gt;interfaz de desarrollo&lt;/em&gt; contiene, por lo tanto, un &lt;em&gt;compilador&lt;/em&gt;. C++ es un lenguaje “compilado”. Hay otros lenguajes que son “interpretados”, como Python.&lt;/p&gt;
+
+&lt;p&gt;El microcontrolador no puede entender el programa escrito por nosotros en la &lt;em&gt;Interfaz de desarrollo&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Los programas de arduino &lt;em&gt;deben&lt;/em&gt; describir dos funciones: &lt;strong&gt;setup()&lt;/strong&gt; y &lt;strong&gt;loop()&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para tener esto más claro, una función es un fragmento de programa aislado, que puede ejecutarse desde un programa principal, o desde un programa secundario, o desde otra función.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;setup()&lt;/strong&gt; y &lt;strong&gt;loop()&lt;/strong&gt; son el programa principal que funcionará en el microcontrolador. La primera de ellas, &lt;strong&gt;setup()&lt;/strong&gt;, funcionará solamente una vez, cada vez que se encienda el microprocesador. Una vez que termina esta función, empezará a funcionar la segunda, &lt;strong&gt;loop()&lt;/strong&gt;, y en cuanto termine de ejecutarse, se repetirá otra vez, y así de manera indefinida mientras exista alimentación eléctrica en la placa del microcontrolador.&lt;/p&gt;
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//las instrucciones escritas aquí&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//solo se ejecutan una vez tras encender.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;cm&quot;&gt;/*
+    Estas instrucciones se ejecutan después
+    de las de setup(), y se repiten para siempre,
+    mientras haya electricidad en la placa
+  */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El programa de arriba muestra las dos funciones, &lt;em&gt;setup()&lt;/em&gt; y &lt;em&gt;loop()&lt;/em&gt;, y las instrucciones que serán su descripcción deben escribirse entre llaves.&lt;/p&gt;
+
+&lt;p&gt;En este ejemplo, las instrucciones escritas &lt;em&gt;no hacen nada&lt;/em&gt;, puesto que se trata de &lt;strong&gt;&lt;em&gt;comentarios&lt;/em&gt;&lt;/strong&gt;, cuya función es explicar algo del funcionamiento al lector del programa (y al propio autor, ya que es frecuente que incluso el programador necesite recordar qué es lo que hacía el programa cuando pasa un tiempo desde que lo creó). Hay comentarios de una sola línea, o de varias líneas. En cualquier momento en que en una línea, al principio o a mitad, aparezcan los caracteres &lt;strong&gt;//&lt;/strong&gt;, el resto de la línea se considera un comentario, y el &lt;em&gt;compilador&lt;/em&gt; de Arduino no analizará el texto hasta el final de la línea. Los comentarios también pueden empezar con &lt;strong&gt;/*&lt;/strong&gt; y terminar con &lt;strong&gt;*/&lt;/strong&gt;, ocupando varias líneas.&lt;/p&gt;
+
+&lt;p&gt;Nuestra &lt;em&gt;IDE&lt;/em&gt; de arduino tiene también un &lt;em&gt;resaltador de código&lt;/em&gt;, que es capaz de hacer una lectura del programa reconociendo palabras clave, y asignándoles un color. Esto ayuda a que los programadores o lectores del programa puedan detectar algunos errores sencillos solamente mirando el color del texto.&lt;/p&gt;
+
+&lt;h3 id=&quot;instrucciones&quot;&gt;Instrucciones&lt;/h3&gt;
+
+&lt;p&gt;Todas las instrucciones del lenguaje Arduino, como las de C y C++, deben terminar con punto y coma, ;&lt;/p&gt;
+
+&lt;p&gt;Algunas instrucciones serán palabras reservadas, otras tendrán operaciones, y otras serán “llamadas” a funciones. A veces, combinaremos varias de estas opciones en una instrucción:&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Esta instrucción crea una variable, usando&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// la palabra reservada &quot;int&quot;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>drancope</name></author><category term="4ESO" /><category term="Programación" /><category term="Microcontroladores" /><summary type="html">En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.</summary></entry><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
