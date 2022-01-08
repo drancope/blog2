@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-07T22:03:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Empezar con Arduino</title><link href="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html" rel="alternate" type="text/html" title="Empezar con Arduino" /><published>2022-01-04T20:59:58+01:00</published><updated>2022-01-04T20:59:58+01:00</updated><id>http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino</id><content type="html" xml:base="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html">&lt;p&gt;En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-08T01:08:36+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Computación y Robótica</title><subtitle>Blog sobre la materia en ESO</subtitle><entry><title type="html">Empezar con Arduino</title><link href="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html" rel="alternate" type="text/html" title="Empezar con Arduino" /><published>2022-01-04T20:59:58+01:00</published><updated>2022-01-04T20:59:58+01:00</updated><id>http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino</id><content type="html" xml:base="http://localhost:4000/4eso/2022/01/04/Empezar-con-Arduino.html">&lt;p&gt;En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 
@@ -170,10 +170,59 @@
 &lt;p&gt;Algunas instrucciones serán palabras reservadas, otras tendrán operaciones, y otras serán “llamadas” a funciones. A veces, combinaremos varias de estas opciones en una instrucción:&lt;/p&gt;
 
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Esta instrucción crea una variable, usando&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// la palabra reservada &quot;int&quot;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// la palabra reservada &quot;int&quot;:&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>drancope</name></author><category term="4ESO" /><category term="Programación" /><category term="Microcontroladores" /><summary type="html">En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.</summary></entry><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;// Esta instrucción utiliza la función&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Serial.println() para escribir una palabra:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Almuerzo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Esta instrucción hace algo (que&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// no está indicado) si se cumple&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// una condición:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// aquí se haría algún conjunto de instrucciones&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Por último, un ejemplo de combinación:&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hora&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contador&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hora de almozar!.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El programa de parpadeo del led tiene su función &lt;em&gt;setup()&lt;/em&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pinMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LED_BUILTIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;La función &lt;strong&gt;pinMode()&lt;/strong&gt; sirve para configurar un terminal o &lt;em&gt;pin&lt;/em&gt; del microcontrolador. Se puede hacer que esa patilla sirva para producir voltaje, y así poder controlar algún circuito eléctrico, lo cual se llama &lt;em&gt;modo de salida&lt;/em&gt;, o sencillamente &lt;em&gt;salida&lt;/em&gt;. O bien se puede configurar para que el microprocesador “&lt;em&gt;vea&lt;/em&gt;” qué voltaje le hemos conectado a ese pin mediante un circuito externo. Esto sería el modo de &lt;em&gt;entrada&lt;/em&gt;. Existe otro modo especial de &lt;em&gt;entrada&lt;/em&gt; que no veremos aquí.&lt;/p&gt;
+
+&lt;p&gt;Para indicar esta configuración con la función &lt;em&gt;pinMode()&lt;/em&gt;, debemos escribir dentro de los paréntesis a qué pin o terminal queremos aplicar la configuración, y qué configuración será. Estos datos, evidentemente, son números: el número de pin, y el número de configuración. Por ejemplo, el pin 5, y la configuración 1. Pero como en nuestro Arduino resulta que el pin 13 es donde está conectado el &lt;em&gt;led&lt;/em&gt; de la placa, y en realidad no nos gusta saber si el modo &lt;em&gt;entrada&lt;/em&gt; es 0 ó 1, o si el de &lt;em&gt;salida&lt;/em&gt; es 1 ó 2, ni queremos tampoco saber si en otro arduino existe un &lt;em&gt;led&lt;/em&gt; conectado a otro pin distinto, entonces usaremos algo que han preparado para nosotros:&lt;/p&gt;
+
+&lt;p&gt;Alguien se ha preocupado de hacer que &lt;strong&gt;LED_BUILTIN&lt;/strong&gt; sea en realidad el número 13, y que &lt;strong&gt;OUTPUT&lt;/strong&gt; sea el número de configuración que se refiere al modo de &lt;em&gt;salida&lt;/em&gt;. Si usamos otra placa donde no es así, el fabricante se habrá preocupado -esperemos- de hacer que ambas definiciones cambien al número correcto.&lt;/p&gt;
+
+&lt;p&gt;La función &lt;em&gt;loop()&lt;/em&gt; hace lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;digitalWrite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LED_BUILTIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;digitalWrite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LED_BUILTIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La primera función, &lt;em&gt;digitalWrite()&lt;/em&gt; pone el voltaje del pin 13 en “encendido” (es decir, 5 voltios). Esto hará que se encienda el led.&lt;/p&gt;
+
+&lt;p&gt;La segunda función, &lt;em&gt;delay()&lt;/em&gt; entra en un modo de “espera” durante la cantidad de milisegundos que le hemos pasado dentro de los paréntesis.&lt;/p&gt;
+
+&lt;p&gt;La siguiente, como es de esperar, apaga el led. Y por último se espera otro segundo más. Después, se repite todo este ciclo, hasta que apaguemos el arduino quitándole el voltaje de alimentación.&lt;/p&gt;
+
+&lt;p&gt;Las letras mayúsculas y minúsculas de los nombres de las funciones o de las variables, en el lenguaje c (y en la mayoría de lenguajes), deben escribirse tal cual se ve en los ejemplos. la función &lt;em&gt;delay()&lt;/em&gt; no sería la misma función que &lt;em&gt;Delay()&lt;/em&gt; o &lt;em&gt;deLay()&lt;/em&gt;. La primera viene en minúsculas, y alguien la ha escrito para que nosotros la usemos, así que ya existe y está disponible. Las otras no existen, salvo que nosotros las “definamos” o “describamos”, escribiendo cada una de las instrucciones que querríamos que hicieran.&lt;/p&gt;
+
+&lt;div class=&quot;bloque&quot;&gt;
+Es frecuente que al escribir un programa nos confundamos con alguna letra del nombre de una función, o que cambiemos algúna mayúscula por minúscula, o que se nos olvide algún punto y coma. Entonces el compilador nos dará un mensaje de error cuando tratemos de convertir el *código fuente* en *lenguaje máquina*
+&lt;/div&gt;</content><author><name>drancope</name></author><category term="4ESO" /><category term="Programación" /><category term="Microcontroladores" /><summary type="html">En este artículo doy algunos conocimientos básicos acerca de qué es un microcontrolador, qué es un arduino, y cómo se puede empezar a programar con él.</summary></entry><entry><title type="html">Abordar la construcción de una estación meteorológica</title><link href="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html" rel="alternate" type="text/html" title="Abordar la construcción de una estación meteorológica" /><published>2021-12-27T11:02:08+01:00</published><updated>2021-12-27T11:02:08+01:00</updated><id>http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica</id><content type="html" xml:base="http://localhost:4000/2eso/2021/12/27/Estacion-meteorologica.html">&lt;p&gt;Una estación meteorológica es un proyecto idóneo para hacer en el instituto: tiene un microcontrolador, que puede ser muy sencillo y barato.&lt;/p&gt;
 
 &lt;div class=&quot;post-categories&quot;&gt;
  Categorías: 

@@ -185,7 +185,58 @@ Algunas instrucciones serán palabras reservadas, otras tendrán operaciones, y 
 
 ```c++
 // Esta instrucción crea una variable, usando
-// la palabra reservada "int"
+// la palabra reservada "int":
 int contador;
 
+// Esta instrucción utiliza la función
+// Serial.println() para escribir una palabra:
+Serial.println("Almuerzo");
+
+// Esta instrucción hace algo (que
+// no está indicado) si se cumple
+// una condición:
+if (contador>6) {
+  // aquí se haría algún conjunto de instrucciones
+}
+
+// Por último, un ejemplo de combinación:
+if ((hora=contador*2)>12)
+  Serial.println("hora de almozar!.");
+
 ```
+
+El programa de parpadeo del led tiene su función *setup()* con el siguiente contenido:
+```c++
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+```
+La función **pinMode()** sirve para configurar un terminal o *pin* del microcontrolador. Se puede hacer que esa patilla sirva para producir voltaje, y así poder controlar algún circuito eléctrico, lo cual se llama *modo de salida*, o sencillamente *salida*. O bien se puede configurar para que el microprocesador "*vea*" qué voltaje le hemos conectado a ese pin mediante un circuito externo. Esto sería el modo de *entrada*. Existe otro modo especial de *entrada* que no veremos aquí.
+
+Para indicar esta configuración con la función *pinMode()*, debemos escribir dentro de los paréntesis a qué pin o terminal queremos aplicar la configuración, y qué configuración será. Estos datos, evidentemente, son números: el número de pin, y el número de configuración. Por ejemplo, el pin 5, y la configuración 1. Pero como en nuestro Arduino resulta que el pin 13 es donde está conectado el *led* de la placa, y en realidad no nos gusta saber si el modo *entrada* es 0 ó 1, o si el de *salida* es 1 ó 2, ni queremos tampoco saber si en otro arduino existe un *led* conectado a otro pin distinto, entonces usaremos algo que han preparado para nosotros:
+
+Alguien se ha preocupado de hacer que **LED_BUILTIN** sea en realidad el número 13, y que **OUTPUT** sea el número de configuración que se refiere al modo de *salida*. Si usamos otra placa donde no es así, el fabricante se habrá preocupado -esperemos- de hacer que ambas definiciones cambien al número correcto.
+
+La función *loop()* hace lo siguiente:
+
+```c++
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+```
+
+La primera función, *digitalWrite()* pone el voltaje del pin 13 en "encendido" (es decir, 5 voltios). Esto hará que se encienda el led.
+
+La segunda función, *delay()* entra en un modo de "espera" durante la cantidad de milisegundos que le hemos pasado dentro de los paréntesis.
+
+La siguiente, como es de esperar, apaga el led. Y por último se espera otro segundo más. Después, se repite todo este ciclo, hasta que apaguemos el arduino quitándole el voltaje de alimentación.
+
+Las letras mayúsculas y minúsculas de los nombres de las funciones o de las variables, en el lenguaje c (y en la mayoría de lenguajes), deben escribirse tal cual se ve en los ejemplos. la función *delay()* no sería la misma función que *Delay()* o *deLay()*. La primera viene en minúsculas, y alguien la ha escrito para que nosotros la usemos, así que ya existe y está disponible. Las otras no existen, salvo que nosotros las "definamos" o "describamos", escribiendo cada una de las instrucciones que querríamos que hicieran.
+
+<div class="bloque">
+Es frecuente que al escribir un programa nos confundamos con alguna letra del nombre de una función, o que cambiemos algúna mayúscula por minúscula, o que se nos olvide algún punto y coma. Entonces el compilador nos dará un mensaje de error cuando tratemos de convertir el *código fuente* en *lenguaje máquina*
+</div>
