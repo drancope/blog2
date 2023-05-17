@@ -17,8 +17,8 @@ title: Computación y Robótica
 email: drancope@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog sobre la materia en ESO
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog2" # the subpath of your site, e.g. /blog
+url: "https://drancope.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 # Build settings
